@@ -1,0 +1,227 @@
+* { margin: 0; 
+	padding: 0; 
+  }
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+   }
+a:hover , a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body{
+min-height: 713px;
+background-color: #fb8300;
+}
+/*шапка*/
+.main-nav{
+	margin-left:65px;
+	margin-top:44px;
+}
+.main-nav li {
+	display:inline-block;
+	margin-right:39px;
+}
+.main-nav li:last-child{
+	margin-right: 0px;
+}
+.main-nav li a{
+height: 27px;
+color: #000000;
+font-family: "Oswald";
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 2.25px;
+text-transform: uppercase;
+}
+header{
+	background-color: #ffffff;
+    min-height: 115px;
+     -webkit-clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%); 
+}
+.logo{
+	display:block;
+	float:left;
+	width:132px;
+	margin-left:33px;
+	margin-top:25px;
+
+}
+nav{
+	float:left;
+	min-width:710px;
+	margin-left:8px;
+}
+/*слайдер-главная*/
+.main-content{
+	width:1211px;
+	min-height: 541px;
+	background-color: #1b1928;
+	float:right;
+	margin-top:52px;
+	-webkit-clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 90%); 
+     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 90%);
+   }
+
+.left-info{
+	float:left;
+	color: #ffffff;
+    font-family: Oswald;
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.left-info p{
+	margin-top:34%;
+	margin-left:27%;
+}
+.left-info span{
+	display:block;
+	color: #9f9f9f;
+    font-family: "Roboto Condensed";
+    font-size: 21px;
+    font-weight: 300;
+    text-transform: none;
+    margin-left:27%;
+    margin-top:91%;
+}
+.main-content_2 .left-info span{
+margin-top:49%;
+}
+.main-info{
+	float:left;
+	margin-left:20%;
+	margin-top:4%;
+}
+.right-info{
+	float:left;
+}
+.main-info h3{
+	color: #ffffff;
+    font-family: Oswald;
+	font-size: 100px;
+	font-weight: 400;
+}
+.main-info p{
+	color: #ffffff;
+	font-family: "Roboto Condensed";
+	font-size: 36px;
+	font-weight: 400;
+	padding-top: 2px;
+}
+.main-text{
+	display:block;
+	color: #9f9f9f;
+    font-family: "Roboto Condensed";
+    font-size: 21px;
+    font-weight: 300;
+	padding-top:15px 
+}
+.buy-info{
+	margin-top:12%;
+}
+.buy-button{
+	text-align:center;
+	display: inline-block;
+	width: 252px;
+    height: 55px;
+	background-color: #fb8300;
+	color: #1b1928;
+	font-family: 'Oswald';
+	font-size: 21px;
+	font-weight: 500;
+	text-transform: uppercase;
+	-webkit-clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 90%); 
+     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 90%);
+     padding-top:23px; 
+}
+.buy-text{
+	display:inline-block;
+	color: #9f9f9f;
+	font-family: "Roboto Condensed";
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	text-decoration: underline;
+	padding-left: 20px;
+}
+.buy-text:hover{
+	color: #9f9f9f;
+}
+.right-info{
+	margin-top:16%;
+	color: #9f9f9f;
+	font-family: "Roboto Condensed";
+	font-size: 16px;
+	font-weight: 300;
+	margin-left:15%;
+	text-align:right
+}
+.next-arrow{
+	width: 15px;
+    height: 31px;
+	margin-top:18px;
+	margin-bottom:16px;
+	cursor:pointer; 
+}
+.prev-arrow{
+	    margin-left: 27%;
+	    width: 15px;
+        height: 31px;
+        cursor:pointer; 
+        margin-top:20%;
+}
+.main-content_2{
+	width:1211px;
+	min-height: 541px;
+	background-color: #1b1928;
+	float:right;
+	margin-top:52px;
+	-webkit-clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 90%); 
+     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 90%); 
+}
+.first-line{
+	position: relative;
+	right:61%;
+	top:40px;
+}
+.second-line{
+	position: relative;
+	right:13%;
+	top:32px;
+}
+#slides {
+    position: relative;
+    width:1211px;
+	min-height: 541px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    float:right;
+}
+ 
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+   
+    opacity: 0;
+    z-index: 1;
+ 
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+ 
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
